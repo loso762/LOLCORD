@@ -9,7 +9,7 @@ const LoLProvider = (props) => {
     const [champ, setChamp] = useState("Akali");
     const [users,setUsers] = useState([]);
     const [num, setnum] = useState(0);
-    const APIKEY = "RGAPI-1c8586a1-e783-4c13-ab06-5ef6740f3d05";
+    const APIKEY = "RGAPI-4313ec9a-4563-468c-83fa-c5ede69d91b1";
 
     return (
         <LolContext.Provider value={{ user,setUser,champ,setChamp,APIKEY,users,setUsers,num,setnum }}>
