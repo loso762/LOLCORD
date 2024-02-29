@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/LOLCORD/static/css/main.4e69bc11.css",
-    "main.js": "/LOLCORD/static/js/main.a1709851.js",
-    "static/js/787.ed32c67d.chunk.js": "/LOLCORD/static/js/787.ed32c67d.chunk.js",
-    "static/media/bg1.webp": "/LOLCORD/static/media/bg1.e3a2e1b3ed9dc8f05cad.webp",
-    "static/media/bg2.jpg": "/LOLCORD/static/media/bg2.b843084c57388f0ad370.jpg",
-    "index.html": "/LOLCORD/index.html",
-    "main.4e69bc11.css.map": "/LOLCORD/static/css/main.4e69bc11.css.map",
-    "main.a1709851.js.map": "/LOLCORD/static/js/main.a1709851.js.map",
-    "787.ed32c67d.chunk.js.map": "/LOLCORD/static/js/787.ed32c67d.chunk.js.map"
+    "main.css": "/lolre/static/css/main.16c51c2a.css",
+    "main.js": "/lolre/static/js/main.fb9de4c3.js",
+    "static/js/787.ed32c67d.chunk.js": "/lolre/static/js/787.ed32c67d.chunk.js",
+    "static/media/bg1.webp": "/lolre/static/media/bg1.e3a2e1b3ed9dc8f05cad.webp",
+    "static/media/bg2.jpg": "/lolre/static/media/bg2.b843084c57388f0ad370.jpg",
+    "index.html": "/lolre/index.html",
+    "main.16c51c2a.css.map": "/lolre/static/css/main.16c51c2a.css.map",
+    "main.fb9de4c3.js.map": "/lolre/static/js/main.fb9de4c3.js.map",
+    "787.ed32c67d.chunk.js.map": "/lolre/static/js/787.ed32c67d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e69bc11.css",
-    "static/js/main.a1709851.js"
+    "static/css/main.16c51c2a.css",
+    "static/js/main.fb9de4c3.js"
   ]
 }
