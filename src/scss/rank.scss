@@ -1,0 +1,484 @@
+$color-shadow: #BABECC;
+$color-white: rgb(255, 255, 255);
+$color-bg: rgba(243, 244, 243, 0.8);
+
+.Ranking{
+    max-width: 1100px;
+    margin: 160px auto 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'GmarketSansMedium';
+    color: rgb(69, 69, 69);
+    background-color: transparent;
+    z-index: 2;
+
+    h2{
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+        font-size: 40px;
+        letter-spacing: 4px;
+        color: #f07d8d;
+    }
+
+    .leagues{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 50px 0px;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            text-align: center;
+            width: 11%;
+            cursor: pointer;
+            color: rgb(78, 78, 78);
+            padding: 10px 0;
+            border-radius: 10px;
+            background-color:$color-white;
+            &:hover {
+                box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+            }
+        
+            &:active {
+                box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+            }
+        }
+        
+        li.active{
+            color:$color-white;
+            &:nth-child(1){
+                background-color: #c7c5b5;
+            }
+            &:nth-child(2){
+                background-color: #de4040;
+            }
+            &:nth-child(3){
+                background-color: #9240de;
+            }
+            &:nth-child(4){
+                background-color: #aface8;
+            }
+            &:nth-child(5){
+                background-color: #89ce9f;
+            }
+            &:nth-child(6){
+                background-color: goldenrod;
+            }
+            &:nth-child(7){
+                background-color: silver;
+            }
+            &:nth-child(8){
+                background-color: rgb(161, 112, 27);
+            }
+        }
+    }
+    
+    .division{
+        display: flex;
+        opacity: 1;
+        transform: scaleY(0);
+        justify-content: center;
+        margin: 40px 50px;
+        transition: 0.5s;
+        overflow: hidden;
+        padding: 20px 0;
+        li{
+            text-align: center;
+            width: 9%;
+            cursor: pointer;
+            margin: 0 20px;
+            background-color:$color-white;
+            color: rgb(138, 138, 138);
+            padding: 8px 0;
+            border-radius: 10px;
+            &:hover {
+                box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+            }
+        
+            &:active {
+                box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+            }
+        }
+        
+        li.active{
+            color:  #ed304a;
+        }
+        &.active{
+            display: flex;
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .rankers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto 50px;
+        color: rgb(48, 48, 48);
+        background-color: $color-bg;
+        text-shadow: 1px 1px 0 $color-white;
+        box-shadow: -1px -1px 10px $color-white,  1px 1px 10px #BABECC;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        li{
+            width: 95%;
+            height: 50px;
+            margin: 0 auto ;
+            padding: 10px 0 ;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            margin: 5px 0;
+            box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.2);     
+            transition: 1s;
+            background-color: $color-white;
+            
+            p{
+                display: block;
+                text-align: center;
+            }
+
+            &:nth-child(2),&:nth-child(3),&:nth-child(4) {
+                .rank{
+                    color: black;
+                    background: url("https://ifh.cc/g/lnhNBV.png") no-repeat;
+                    background-size: 120px;
+                    height: 30px;
+                    width: 30px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &:nth-child(2) {
+                .rank{
+                    background-position:-8.5px -33px;
+                }
+                .rankerName{
+                    color:  rgb(221, 158, 0);
+                }
+            }   
+            &:nth-child(3) {
+                .rank{
+                    background-position: -46.5px -33px;
+                }
+                .rankerName{
+                    color: rgb(164, 164, 164);
+                }
+            }   
+            &:nth-child(4) {
+                .rank{
+                    background-position:-84.5px -33px;
+                }
+                .rankerName{
+                    color: rgb(149, 82, 82);
+                }
+            }   
+            
+            .rank{
+                width: 30px;
+                margin: 0 35px;
+                transition: 0.5s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 4px;
+            }
+
+            .rankerName{
+                width: 50%;
+                cursor: pointer;
+                transition: 0.5s;
+                display: flex;
+                align-items: center;
+                padding-top: 4px;
+                &:hover{
+                    font-size: 19px;
+                    color: rgb(240, 125, 141);
+                }
+            }
+            
+            .LP{
+                width: 13%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 4px;
+            }
+
+            .winlose{
+                display: flex;
+                width: 15%;
+                min-width: 120px;
+                color: #fafaf6;
+                height: 25px;
+                border-radius: 7px;
+                overflow: hidden;
+                text-shadow: none;
+                .win{
+                    text-align: left;
+                    line-height: 26px; 
+                    padding-left : 10px;
+                    background-color: #5383E8;   
+                }
+                .lose{
+                    text-align: right;  
+                    line-height: 26px; 
+                    padding-right : 10px;
+                    background-color: #E84057;
+                }
+            }
+            
+            .Odds{
+                width: 12%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 4px;
+            }
+            &:hover{
+                box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+                }
+            &:active {
+                box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+            }
+        }
+        .topItem{
+            width: 95%;
+            height: 50px;
+            margin: 10px auto ;
+            padding: 10px 0 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            p{
+                text-align: center;
+                &:nth-child(1){
+                    width: 12%;
+                }
+                &:nth-child(2){
+                    width: 50%;
+                    text-align: left;
+                }
+                &:nth-child(3){
+                    width: 13%;
+                }
+                &:nth-child(4){
+                    width: 15%;
+                }
+                &:nth-child(5){
+                    width: 12%;
+                }
+            }
+            &:hover{
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+
+$tablet : 1024px;
+$mobile : 768px;
+$min : 240px;
+
+@mixin device($min,$max){
+    @media (min-width:$min) and (max-width:$max) {
+        @content;
+    }
+}
+
+@include device($mobile,$tablet){
+    .Ranking .leagues{
+        margin: 40px 4vw 0px;
+        li{
+            font-size: 14px;
+            word-break : keep-all;
+            padding: 8px 0;
+        }
+    }
+}
+
+@include device($min,$mobile){
+    .Ranking{
+        margin-top: 190px;
+        .leagues {
+            flex-wrap: wrap;
+            margin: 0px 4vw 0px;
+            li{
+                width: 23%;
+                margin: 10px 1px 1px;
+                font-size: 14px;
+                word-break : keep-all;
+                padding: 8px 0;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        }
+    
+        .division {
+            margin: 15px 0;
+            padding: 0 4vw;
+            height: 55px;
+            align-items: center;
+            li{
+                width: 16%;
+                height: 30px;
+                margin: 0 2vw;
+                padding: 0;
+                line-height: 30px;
+            }
+        }
+
+        .rankers{
+            box-shadow: 0px 0px 5px $color-white,  0px 0px 5px #BABECC;
+            background-color:  rgba(243, 244, 243, 0.5);
+            li{
+                width: 95%;
+                height: 50px;
+                margin: 0 auto ;
+                padding: 10px 0 ;
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+                margin: 5px 0;
+                box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.2);     
+                transition: 1s;
+                background-color: $color-white;
+                
+                p{
+                    display: block;
+                    text-align: center;
+                }
+                &:nth-child(2),&:nth-child(3),&:nth-child(4) {
+                    .rank{
+                        color: black;
+                        background: url("https://ifh.cc/g/lnhNBV.png") no-repeat;
+                        background-size: 75px;
+                        height: 25px;
+                        width: 30px;
+                        padding: 0 8px;
+                        margin: 0;
+                        margin-left: 1vw;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                &:nth-child(2) {
+                    .rank{
+                        background-position:1.5px -19px;
+                    }
+                }   
+                &:nth-child(3) {
+                    .rank{
+                        background-position:-23px -19px;
+                    }
+                }   
+                &:nth-child(4) {
+                    .rank{
+                        background-position:-48px -19px;
+                    }
+                }   
+                
+                .rank{
+                    width: 30px;
+                    padding: 0 8px;
+                    margin: 0;
+                    margin-left: 1vw;
+                    transition: 0.5s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 4px;
+                }
+                
+                .rankerName{
+                    text-align: left;
+                    font-size: 13px;
+                    margin-left: 2vw;
+                    &:hover{
+                        font-size: 15px;
+                        color: #f07d8d;
+                    }
+                }
+                
+                .LP{
+                    width: 13%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 4px;
+                    font-size: 12px;
+                }
+    
+                .winlose{
+                    min-width: 90px;
+                    margin: 0 10px;
+                    font-size: 11px;
+                    .win{
+                        padding-left : 5px;  
+                    }
+                    .lose{
+                        padding-right : 5px;
+                    }
+                }
+                
+                .Odds{
+                    padding-right: 10px;
+                    font-size: 12px;
+                }
+                &:hover{
+                    box-shadow: -2px -2px 5px $color-white, 2px 2px 5px $color-shadow;
+                    }
+                &:active {
+                    box-shadow: inset 1px 1px 2px $color-shadow, inset -1px -1px 2px $color-white;
+                }
+            }
+
+            .topItem{
+                height: 50px;
+                margin: 5px auto 0;
+                font-size: 13px;
+                background-color: transparent;
+                border: none;
+                box-shadow: none; 
+                p{
+                    &:nth-child(1){
+                        width: 40px;
+                        padding: 0;
+                        margin: 0;
+                        margin-left: 1vw;
+                    }
+                    &:nth-child(2){
+                        width: 50%;
+                        text-align: left;
+                       padding-left: 3vw;
+                    }
+                    &:nth-child(3){
+                        width: 13%;
+                    }
+                    &:nth-child(4){
+                        min-width: 90px;
+                        margin: 0 5px;
+                    }
+                    &:nth-child(5){
+                        width: 16%;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
